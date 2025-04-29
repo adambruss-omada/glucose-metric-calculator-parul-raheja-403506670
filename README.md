@@ -50,9 +50,9 @@ Here’s what we value in this assignment:
 ## Submission Guidelines
 - Project Setup:
   - Set up your local development environment as needed.
-  - Commit all changes to the repository.
+  - Commit all changes to this repository.
 - Submit Your Work:
-  - Send the GitHub repository URL.
+  - Once your solution is complete and you’re ready to submit it, please create a Merge Request (Pull Request) against this repository.
   - Export AI prompt summaries and include them in the README file.
     - ChatGPT prompts can be exported to markdown (.md) format by clicking export in the top right corner of the chat window
     - Cursor prompts can be exported using https://github.com/thomas-pedersen/cursor-chat-browser
