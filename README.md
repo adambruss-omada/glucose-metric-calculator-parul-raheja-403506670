@@ -133,3 +133,14 @@ The project uses RSpec for testing. To run the test suite:
 ```bash
 bundle exec rspec
 ```
+
+
+### Chat Gpt Prompts used:
+
+- i want to create seed data for lot of users.
+- Generate unit test cases for this file.
+
+### Improvements:
+
+- In the UI add advance filtering for certain time period. IE. i might want to see the reading of let's say december last year and compare with may this year.
+- Caching.

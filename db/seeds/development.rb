@@ -1,15 +1,26 @@
+puts "Clearing old data..."
+GlucoseLevel.delete_all
+Member.delete_all
 
-puts "Creating member..."
-member = Member.find_or_create_by!(name: "Luke")
-
-puts "Creating glucose data for member #{member.name}..."
-20.times do |i|
-  GlucoseLevel.create!(
-    member_id: member.id,
-    tested_at: i.days.ago,
-    tz_offset: '-04:00',
-    value: rand(40..600)
-  )
+puts "Creating members..."
+members = 100.times.map do
+  Member.create!(name: Faker::Name.name)
 end
 
-puts "Glucose data created for member #{member.name}"
+puts "Creating glucose levels..."
+members.each do |member|
+  readings = 200.times.map do
+    {
+      member_id: member.id,
+      value: rand(40..300),
+      tested_at: rand(60).days.ago.change(hour: rand(0..23), min: rand(0..59)),
+      tz_offset: "-04:00",
+      created_at: Time.zone.now,
+      updated_at: Time.zone.now
+    }
+  end
+
+  GlucoseLevel.insert_all(readings)
+end
+
+puts "✅ Done seeding!"
