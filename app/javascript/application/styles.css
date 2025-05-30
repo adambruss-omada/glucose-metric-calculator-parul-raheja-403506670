@@ -1,0 +1,67 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .title {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .input-group input {
+    padding: 8px;
+    width: 200px;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .loading {
+    color: #2980b9;
+    text-align: center;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  
+  .metrics {
+    margin-top: 20px;
+  }
+  
+  .metric-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .metric-card h3 {
+    margin-bottom: 10px;
+    color: #34495e;
+  }
+  
+  .metric-card ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .metric-card li {
+    margin: 5px 0;
+  }
+  
