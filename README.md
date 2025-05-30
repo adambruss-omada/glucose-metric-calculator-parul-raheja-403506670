@@ -144,3 +144,8 @@ bundle exec rspec
 
 - In the UI add advance filtering for certain time period. IE. i might want to see the reading of let's say december last year and compare with may this year.
 - Caching.
+
+### Screen Recording
+https://github.com/user-attachments/assets/80644b04-5d3f-4c08-8294-3c630149cdac
+
+
