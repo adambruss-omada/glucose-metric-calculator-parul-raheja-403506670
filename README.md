@@ -139,3 +139,8 @@ bundle exec rspec
 
 - i want to create seed data for lot of users.
 - Generate unit test cases for this file.
+
+### Improvements:
+
+- In the UI add advance filtering for certain time period. IE. i might want to see the reading of let's say december last year and compare with may this year.
+- Caching.
