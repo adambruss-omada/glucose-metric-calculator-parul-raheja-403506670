@@ -143,9 +143,44 @@ bundle exec rspec
 ### Improvements:
 
 - In the UI add advance filtering for certain time period. IE. i might want to see the reading of let's say december last year and compare with may this year.
-- Caching.
+- Caching for the glucose metrics.
 
 ### Screen Recording
 https://github.com/user-attachments/assets/80644b04-5d3f-4c08-8294-3c630149cdac
 
+### What I Built
+- Implemented glucose metric calculations for both last 7 days and current month.
+- Created a basic dashboard UI to display metrics.
+- API endpoint at `members/:id/metrics` returns the metrics in JSON.
 
+### Assumptions
+- All glucose readings are in local time as per the system timezone.
+- Each reading has a `member_id`, `value`, and `timestamp`.
+
+### How to Test My Code
+1. Install Ruby dependencies:
+```bash
+bundle install
+```
+
+2. Install JavaScript dependencies:
+```bash
+yarn install
+```
+
+3. Build JavaScript assets:
+```bash
+yarn build
+```
+
+4. Set up the database:
+```bash
+bundle exec rails db:create db:setup db:seed
+```
+
+5. Start the development server:
+```bash
+bin/dev
+```
+
+The application will be available at `http://localhost:3000`
